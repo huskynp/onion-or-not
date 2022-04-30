@@ -1,0 +1,135 @@
+html{
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url('https://images.unsplash.com/photo-1585829365295-ab7cd400c167?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  font-family: 'Arial';
+}
+
+body{
+    height: 90vh;
+}
+
+.score{
+    display:flex;
+    justify-content: space-around;
+
+    color: white;
+    letter-spacing: .05ch;
+    text-shadow: 2px 2px 8px #000000;
+    margin-bottom: 20vh;
+}
+
+#title{
+    color:white;
+    text-shadow: 2px 2px 8px #000000;
+    font-family: 'Georgia';
+    font-size:4vw;
+    text-align: center;
+
+    margin: 1em;
+}
+
+#choices{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 8px #000000;
+
+    margin-top: 10vh;
+}
+
+#choices > div{
+    display: flex;
+    gap: 3em;
+}
+
+#choices button{
+    border: none;
+    padding: .5em;
+    cursor: pointer;
+
+    font-size: 1em;
+}
+
+#choices button:hover{
+    background-color: lightgray;
+}
+
+.correct, .correct:hover{
+    border: none;
+    background-color: lightgreen !important;
+}
+
+.incorrect, .incorrect:hover{
+    border: none;
+    background-color: lightcoral !important;
+}
+
+.modal-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20em;
+    height: 20em;
+    background-color: white;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1em;
+    justify-content: space-evenly;
+}
+
+.last{
+    width: 99%;
+    position: absolute;
+    bottom:0;
+    margin-bottom:10px;
+    text-align: center;
+}
+
+.last > a{
+    color:white;
+    text-decoration: none;
+}
+
+.last > a:hover{
+    color:lightgray;
+}
+
+.help{
+    position: absolute;
+    border: none;
+    color:white;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1.1em;
+    width: 2em;
+    height: 2em;
+    right:    1em;
+    bottom:   1em;
+    cursor: pointer;
+}
+
+.help:hover{
+    color:lightgray;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onion or Not?</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css" />
+
+    <script src="he.js"></script>
+</head>
+<body>
+    <div class="score">
+        <p id="score">Score: 0</p>
+        <p id="highscore">High Score: 0</p>
+    </div>
+
+    <h1 id="title">...</h1>
+
+    <div id="choices">
+        <h1>Onion or Not?</h2>
+        <div>
+            <button id="onion-button" class="button">Onion</button>
+            <button id="not-button" class="button">Real</button>
+        </div>
+    </div>
+
+    <div id="results">
+        <div class="modal">
+            <h2>"Cheese" was FAKE!</h2>
+            <p>You got 2 in a row right.</p>
+            <a href="javascript:void(0)" target="_blank" rel="noopener noreferrer">News Source</a>
+            <button>Try Again</button>
+        </div>
+        <div class="modal-bg"></div>
+    </div>
+
+    <div id="help">
+        <div class="modal">
+            <h2>How to Play</h2>
+            <p style="text-align: center;"> 
+                Try to guess whether the headline is a fake/satire news headline from <a href="https://theonion.com">The Onion</a>, or a real but sketchy headline from <a href="https://reddit.com/r/NotTheOnion">r/NotTheOnion</a>.
+                <br/><br/>Pick wisely.
+            </p>
+            <button>Close</button>
+        </div>
+        <div class="modal-bg"></div>
+    </div>
+
+    <div class="last"><a target="_blank" rel="noopener noreferrer" href="javascript:void(null)">Previous Headline</a></div>
+
+    <button class="help">?</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
